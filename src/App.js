@@ -98,7 +98,7 @@ function App() {
         )}
         {currentPage === "CONTACT" && <Contact />}
       </main>
-      <Footer />;
+      <Footer />
     </div>
   );
 }

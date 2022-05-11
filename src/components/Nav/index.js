@@ -24,7 +24,7 @@ function Nav(props) {
         <ul>
           {pages.map((page) => {
             return (
-              <a href="#">
+              <a>
                 <span
                   onClick={() => {
                     setCurrentPage(page.name);
