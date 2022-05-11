@@ -65,7 +65,7 @@ function App() {
       alt: "Medician Blog Thumbnail",
     },
     {
-      title: "THX Deep Note Recreation",
+      title: "THX Deep Note",
       description:
         "Recreation of the THX deep note generated in real time using Unreal Engine 5.",
       tech: "Unreal Engine 5",
