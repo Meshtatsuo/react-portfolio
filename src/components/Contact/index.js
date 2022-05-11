@@ -44,7 +44,7 @@ function Contact() {
         <h2>Contact</h2>
       </div>
 
-      <div className="section-content">
+      <div className="section-content" id="contact-me">
         <div id="contact-form">
           <h1>Contact me</h1>
           <form id="contact-form" onSubmit={handleFormSubmit}>
@@ -75,15 +75,15 @@ function Contact() {
                 rows="5"
               />
             </div>
+            <button type="submit">Submit</button>
             {errorMessage && (
               <div>
-                <p className="error-text">{errorMessage}</p>
+                <p id="contact-error-text">{errorMessage}</p>
               </div>
             )}
-            <button type="submit">Submit</button>
           </form>
         </div>
-        <div className="social-icons">
+        <div id="contact-socials" className="social-icons">
           <ul>
             <a href="https://www.twitter.com" target="_blank">
               <li>

@@ -162,7 +162,8 @@ section {
 
 /* BEGIN HERO SECTION */
 #hero {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
   position: relative;
 }
 
@@ -170,14 +171,6 @@ section {
   max-width: 100%;
   height: auto;
 }
-
-/* Originally text was part of hero image, but
-    we were required to have a subtitle text based on the
-    mockup, so I recreated the text on the image in html/css
-    to match the subtitle requirement for the mockup.  I used
-    vw units for font-size in order for it to scale as it would
-    had the text been part of the image.
-  */
 
 .hero-name {
   font-size: 4vw;
@@ -282,9 +275,62 @@ section {
 }
 
 /* BEGIN CONTACT ME SECTION */
+#contact-me {
+  display: flex;
+}
+#contact-form {
+  margin: auto 0;
+  padding: 0;
+  flex: 0 0 45%;
+}
 
-#contact-info {
-  flex: 0 0 50%;
+#contact-form div {
+  margin: 5%;
+  text-align: left;
+  display: flex;
+}
+
+#contact-form label {
+  font-size: 20px;
+}
+
+#contact-form input {
+  margin-left: auto;
+  padding: 1%;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 6px;
+  flex: 0 0 75%;
+}
+
+#contact-form textarea {
+  margin-left: auto;
+  padding: 1%;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 10px;
+  flex: 0 0 75%;
+}
+
+#contact-error-text {
+  color: red;
+  font-size: 20px;
+  margin: auto;
+}
+
+#contact-form button {
+  padding: 1% 2%;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 80%;
+  width: 15%;
+}
+
+#contact-socials {
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  flex: 0 0 45%;
 }
 
 /* BEGIN FOOTER STYLING */
@@ -312,6 +358,7 @@ footer a {
 }
 
 #footer-icons {
+  margin: auto 0;
   flex: 1 0 20%;
   text-align: center;
 }

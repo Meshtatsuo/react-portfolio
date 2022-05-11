@@ -82,9 +82,13 @@ function App() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
       ></Nav>
-      <Hero></Hero>
       <main>
-        {currentPage === "HOME" && <Home />}
+        {currentPage === "HOME" && (
+          <>
+            <Hero></Hero>
+            <Home />
+          </>
+        )}
         {currentPage === "ABOUT" && <About />}
         {currentPage === "PORTFOLIO" && (
           <Portfolio
