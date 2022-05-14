@@ -212,7 +212,7 @@ section {
 }
 
 #about-me-text p {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 #resume-link {
@@ -227,7 +227,7 @@ section {
 }
 
 #about-me-text ul {
-  padding: 20px;
+  padding: 22px;
 }
 
 /* BEGIN PORTFOLIO SECTION */
@@ -294,6 +294,10 @@ section {
 #contact-me {
   display: flex;
 }
+#contact-text {
+  flex: 1 100%;
+  margin: 1%;
+}
 #contact-form {
   margin: auto 0;
   padding: 0;
@@ -347,6 +351,10 @@ section {
   text-align: center;
   padding: 0;
   flex: 0 0 45%;
+}
+
+#contact-socials h3 {
+  margin: 6%;
 }
 
 /* BEGIN FOOTER STYLING */
@@ -582,11 +590,15 @@ footer #contact-info {
   }
 
   #about-me-text h3 {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   #about-me-text p {
-    font-size: 12px;
+    font-size: 20px;
+  }
+
+  #about-me-text ul {
+    padding: 12px;
   }
 
   .contact h3 {

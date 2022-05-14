@@ -45,8 +45,18 @@ function Contact() {
       </div>
 
       <div className="section-content" id="contact-me">
+        <div id="contact-text">
+          <h3>Reaching Out</h3>
+          <p>
+            I'm always interested in discussing new oppurtinites. If there is a
+            project you think I'd be a good fit for feel free to reach out by
+            filling out the contact form or sending me an email at{" "}
+            <a href="mailto: info@dominicmisasi.com">info@DominicMisasi.com</a>,
+            and I'll get back to you as soon as I can!
+          </p>
+          <br />
+        </div>
         <div id="contact-form">
-          <h1>Contact me</h1>
           <form id="contact-form" onSubmit={handleFormSubmit}>
             <div>
               <label htmlFor="name">Name:</label>
@@ -84,6 +94,7 @@ function Contact() {
           </form>
         </div>
         <div id="contact-socials" className="social-icons">
+          <h3>Find me on social media!</h3>
           <ul>
             <a href="https://twitter.com/TheAudioBull" target="_blank">
               <li>
