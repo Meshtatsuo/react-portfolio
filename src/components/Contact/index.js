@@ -86,9 +86,13 @@ function Contact() {
               />
             </div>
             <button type="submit">Submit</button>
-            {errorMessage && (
+            {errorMessage ? (
               <div>
                 <p id="contact-error-text">{errorMessage}</p>
+              </div>
+            ) : (
+              <div>
+                <p id="contact-error-text">&nbsp;</p>
               </div>
             )}
           </form>

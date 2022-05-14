@@ -298,6 +298,15 @@ section {
   flex: 1 100%;
   margin: 1%;
 }
+
+#contact-text h3 {
+  font-size: 26px;
+}
+
+#contact-text p {
+  font-size: 20px;
+}
+
 #contact-form {
   margin: auto 0;
   padding: 0;
@@ -435,6 +444,14 @@ footer #contact-info {
     font-size: 10px;
     letter-spacing: normal;
   }
+
+  #contact-text h3 {
+    font-size: 20px;
+  }
+
+  #contact-text p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -493,7 +510,8 @@ footer #contact-info {
   .section-heading h2 {
     text-align: left;
     font-size: 28px;
-    margin-left: 3%;
+    padding: 1% 0;
+    text-align: center;
   }
 
   .section-heading h2 {
@@ -607,6 +625,14 @@ footer #contact-info {
 
   .contact p {
     font-size: 12px;
+  }
+
+  #contact-text h3 {
+    font-size: 22px;
+  }
+
+  #contact-text p {
+    font-size: 20px;
   }
 }
 
