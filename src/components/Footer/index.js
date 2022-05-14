@@ -8,7 +8,7 @@ function Footer() {
       </div>
       <div className="social-icons" id="footer-icons">
         <ul>
-          <a href="https://www.twitter.com" target="_blank">
+          <a href="https://twitter.com/TheAudioBull" target="_blank">
             <li>
               <img
                 src={require("../../assets/font-awesome-icons/twitter.png")}
@@ -16,7 +16,10 @@ function Footer() {
               />
             </li>
           </a>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/dominic-w-misasi/"
+            target="_blank"
+          >
             <li>
               <img
                 src={require("../../assets/font-awesome-icons/linkedin.png")}
@@ -24,7 +27,7 @@ function Footer() {
               />
             </li>
           </a>
-          <a href="https://www.github.com" target="_blank">
+          <a href="https://github.com/Meshtatsuo" target="_blank">
             <li>
               <img
                 src={require("../../assets/font-awesome-icons/github.png")}
