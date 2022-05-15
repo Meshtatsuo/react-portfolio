@@ -8,7 +8,11 @@ function Footer() {
       </div>
       <div className="social-icons" id="footer-icons">
         <ul>
-          <a href="https://twitter.com/TheAudioBull" target="_blank">
+          <a
+            href="https://twitter.com/TheAudioBull"
+            rel="noreferrer"
+            target="_blank"
+          >
             <li>
               <img
                 src={require("../../assets/font-awesome-icons/twitter.png")}
@@ -18,16 +22,22 @@ function Footer() {
           </a>
           <a
             href="https://www.linkedin.com/in/dominic-w-misasi/"
+            rel="noreferrer"
             target="_blank"
           >
             <li>
               <img
                 src={require("../../assets/font-awesome-icons/linkedin.png")}
+                rel="noreferrer"
                 alt="linked-in icon"
               />
             </li>
           </a>
-          <a href="https://github.com/Meshtatsuo" target="_blank">
+          <a
+            href="https://github.com/Meshtatsuo"
+            rel="noreferrer"
+            target="_blank"
+          >
             <li>
               <img
                 src={require("../../assets/font-awesome-icons/github.png")}
