@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Hero from "./components/Hero";
-import Nav from "./components/Nav";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -76,11 +76,11 @@ function App() {
 
   return (
     <div>
-      <Nav
+      <Header
         pages={pages}
         setCurrentPage={setCurrentPage}
         currentPage={currentPage}
-      ></Nav>
+      ></Header>
       <main>
         {currentPage === pages[0] && (
           <>

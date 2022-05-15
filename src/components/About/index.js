@@ -6,7 +6,7 @@ function About() {
       <div className="section-heading">
         <h2>About</h2>
       </div>
-      <div class="section-content">
+      <div className="section-content">
         <div id="profile-image">
           <img
             src={require("../../assets/profile-pic.jpg")}

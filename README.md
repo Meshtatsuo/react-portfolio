@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My portfolio website, built using [Create React App](https://github.com/facebook/create-react-app).
+
+<b>Deployed Application: </b> https://meshtatsuo.github.io/react-portfolio/ 
+
+
+## Preview
+
+![Site-Preview](./repo-resources/site-preview.gif)
+
+<hr/>
+
+# React Usage
 
 ## Available Scripts
 
