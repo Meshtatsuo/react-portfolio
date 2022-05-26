@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fda0a1a.css",
-    "main.js": "/static/js/main.edc35bfe.js",
+    "main.js": "/static/js/main.cdf350e2.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/medician-blog.png": "/static/media/medician-blog.3065e761597de39a8575.png",
     "static/media/llama-player.png": "/static/media/llama-player.e1e47d26625ebea74558.png",
@@ -17,11 +17,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.f8d0b81d5496916293a8.png",
     "index.html": "/index.html",
     "main.2fda0a1a.css.map": "/static/css/main.2fda0a1a.css.map",
-    "main.edc35bfe.js.map": "/static/js/main.edc35bfe.js.map",
+    "main.cdf350e2.js.map": "/static/js/main.cdf350e2.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fda0a1a.css",
-    "static/js/main.edc35bfe.js"
+    "static/js/main.cdf350e2.js"
   ]
 }
