@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.2fda0a1a.css",
-    "main.js": "/react-portfolio/static/js/main.8e48fe36.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/medician-blog.png": "/react-portfolio/static/media/medician-blog.3065e761597de39a8575.png",
-    "static/media/llama-player.png": "/react-portfolio/static/media/llama-player.e1e47d26625ebea74558.png",
-    "static/media/mental-health-check.png": "/react-portfolio/static/media/mental-health-check.953616b173cc0d6cf5ed.png",
-    "static/media/HeroBanner.png": "/react-portfolio/static/media/HeroBanner.7eb0aa98fcc9e28f5945.png",
-    "static/media/profile-pic.jpg": "/react-portfolio/static/media/profile-pic.c85d798bf3917605b161.jpg",
-    "static/media/DMisasiResume_Web.pdf": "/react-portfolio/static/media/DMisasiResume_Web.69c49347f2c5c234f485.pdf",
-    "static/media/AudioBullWordmark.png": "/react-portfolio/static/media/AudioBullWordmark.049b83215c00493206d1.png",
-    "static/media/thx-ue5.png": "/react-portfolio/static/media/thx-ue5.555a450f8e5910907d26.png",
-    "static/media/PI_PhotoReviewer.jpg": "/react-portfolio/static/media/PI_PhotoReviewer.5c853a6dff00d0c7377a.jpg",
-    "static/media/github.png": "/react-portfolio/static/media/github.d0f932f15974881202a2.png",
-    "static/media/twitter.png": "/react-portfolio/static/media/twitter.070ed53e288cf50f45fe.png",
-    "static/media/linkedin.png": "/react-portfolio/static/media/linkedin.f8d0b81d5496916293a8.png",
-    "index.html": "/react-portfolio/index.html",
-    "main.2fda0a1a.css.map": "/react-portfolio/static/css/main.2fda0a1a.css.map",
-    "main.8e48fe36.js.map": "/react-portfolio/static/js/main.8e48fe36.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.css": "/static/css/main.2fda0a1a.css",
+    "main.js": "/static/js/main.edc35bfe.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/medician-blog.png": "/static/media/medician-blog.3065e761597de39a8575.png",
+    "static/media/llama-player.png": "/static/media/llama-player.e1e47d26625ebea74558.png",
+    "static/media/mental-health-check.png": "/static/media/mental-health-check.953616b173cc0d6cf5ed.png",
+    "static/media/HeroBanner.png": "/static/media/HeroBanner.7eb0aa98fcc9e28f5945.png",
+    "static/media/profile-pic.jpg": "/static/media/profile-pic.c85d798bf3917605b161.jpg",
+    "static/media/DMisasiResume_Web.pdf": "/static/media/DMisasiResume_Web.69c49347f2c5c234f485.pdf",
+    "static/media/AudioBullWordmark.png": "/static/media/AudioBullWordmark.049b83215c00493206d1.png",
+    "static/media/thx-ue5.png": "/static/media/thx-ue5.555a450f8e5910907d26.png",
+    "static/media/PI_PhotoReviewer.jpg": "/static/media/PI_PhotoReviewer.5c853a6dff00d0c7377a.jpg",
+    "static/media/github.png": "/static/media/github.d0f932f15974881202a2.png",
+    "static/media/twitter.png": "/static/media/twitter.070ed53e288cf50f45fe.png",
+    "static/media/linkedin.png": "/static/media/linkedin.f8d0b81d5496916293a8.png",
+    "index.html": "/index.html",
+    "main.2fda0a1a.css.map": "/static/css/main.2fda0a1a.css.map",
+    "main.edc35bfe.js.map": "/static/js/main.edc35bfe.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fda0a1a.css",
-    "static/js/main.8e48fe36.js"
+    "static/js/main.edc35bfe.js"
   ]
 }
