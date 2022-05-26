@@ -28,6 +28,7 @@ function Contact() {
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
+    console.log(formState);
   }
 
   function handleFormSubmit(e) {
@@ -100,7 +101,11 @@ function Contact() {
         <div id="contact-socials" className="social-icons">
           <h3>Find me on social media!</h3>
           <ul>
-            <a href="https://twitter.com/TheAudioBull" target="_blank">
+            <a
+              href="https://twitter.com/TheAudioBull"
+              rel="noreferrer"
+              target="_blank"
+            >
               <li>
                 <img
                   src={require("../../assets/font-awesome-icons/twitter.png")}
@@ -110,6 +115,7 @@ function Contact() {
             </a>
             <a
               href="https://www.linkedin.com/in/dominic-w-misasi/"
+              rel="noreferrer"
               target="_blank"
             >
               <li>
@@ -119,10 +125,15 @@ function Contact() {
                 />
               </li>
             </a>
-            <a href="https://github.com/Meshtatsuo" target="_blank">
+            <a
+              href="https://github.com/Meshtatsuo"
+              rel="noreferrer"
+              target="_blank"
+            >
               <li>
                 <img
                   src={require("../../assets/font-awesome-icons/github.png")}
+                  rel="noreferrer"
                   alt="github icon"
                 />
               </li>
