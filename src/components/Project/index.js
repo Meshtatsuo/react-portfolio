@@ -7,7 +7,7 @@ function Project(props) {
       {showcase_items.map((item) => {
         return (
           <div className="showcase-item" key={item.title}>
-            <a href={item.link}>
+            <a href={item.link} target="_blank" rel="noreferrer">
               <div className="hover-overlay">
                 <img src={item.img} alt={item.alt} />
               </div>
@@ -22,7 +22,7 @@ function Project(props) {
       {portfolio_items.map((item) => {
         return (
           <div className="portfolio-item" key={item.title}>
-            <a href={item.link}>
+            <a href={item.link} target="_blank" rel="noreferrer">
               <div className="hover-overlay">
                 <img src={item.img} alt={item.alt} />
               </div>
@@ -34,6 +34,16 @@ function Project(props) {
           </div>
         );
       })}
+      <p>
+        Additionally, this entire site was built with React.{" "}
+        <a
+          href="https://github.com/Meshtatsuo/react-portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View the repository here!
+        </a>
+      </p>
     </div>
   );
 }
