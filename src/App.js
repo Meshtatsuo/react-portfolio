@@ -28,16 +28,24 @@ function App() {
   // Showcase item or items
   const [showcase_items] = useState([
     {
-      title: "Photo Reviewer",
-      description: "A web application for sharing photos with clients.",
-      tech: "NodeJS | ExpressJS | Sequelize | AWS",
-      link: "https://fomo-photo-reviewer.herokuapp.com/",
-      img: `${require("./assets/portfolio-items/PI_PhotoReviewer.jpg")}`,
+      title: "Fixture",
+      description: "A digital sales platform for creators",
+      tech: "MERN | AWS",
+      link: "https://peaceful-fjord-92696.herokuapp.com/",
+      img: `${require("./assets/portfolio-items/fixture.png")}`,
       alt: "photo reviewer thumbnail",
     },
   ]);
   // Portfolio Pieces
   const [portfolio_items] = useState([
+    {
+      title: "Photo Reviewer",
+      description: "A web application for sharing photos with clients.",
+      tech: "NodeJS | ExpressJS | Sequelize | AWS",
+      link: "https://fomo-photo-reviewer.herokuapp.com/",
+      img: `${require("./assets/portfolio-items/PI_PhotoReviewer.png")}`,
+      alt: "photo reviewer thumbnail",
+    },
     {
       title: "Mental Health Check",
       description: "A website for personal mental health check ins!",
@@ -62,15 +70,6 @@ function App() {
       link: "https://medician-blog.herokuapp.com/",
       img: `${require("./assets/portfolio-items/medician-blog.png")}`,
       alt: "Medician Blog Thumbnail",
-    },
-    {
-      title: "THX Deep Note",
-      description:
-        "Recreation of the THX deep note generated in real time using Unreal Engine 5.",
-      tech: "Unreal Engine 5",
-      link: "https://vimeo.com/662102223",
-      img: `${require("./assets/portfolio-items/thx-ue5.png")}`,
-      alt: "THX Deep Note Thumbnail",
     },
   ]);
 
