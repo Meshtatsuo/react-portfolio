@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.2fda0a1a.css",
-    "main.js": "/static/js/main.79839871.js",
+    "main.js": "/static/js/main.33d7fc52.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
-    "static/media/medician-blog.png": "/static/media/medician-blog.56c2659a7b7b46db18db.png",
+    "static/media/national-park.png": "/static/media/national-park.78a726410dcb9cf9fa3b.png",
     "static/media/mental-health-check.png": "/static/media/mental-health-check.f169e8cfca1382da5903.png",
     "static/media/llama-player.png": "/static/media/llama-player.b4545e99fa50a7d22cc5.png",
     "static/media/fixture.png": "/static/media/fixture.5dff33942767683647dc.png",
@@ -17,11 +17,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.f8d0b81d5496916293a8.png",
     "index.html": "/index.html",
     "main.2fda0a1a.css.map": "/static/css/main.2fda0a1a.css.map",
-    "main.79839871.js.map": "/static/js/main.79839871.js.map",
+    "main.33d7fc52.js.map": "/static/js/main.33d7fc52.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fda0a1a.css",
-    "static/js/main.79839871.js"
+    "static/js/main.33d7fc52.js"
   ]
 }
