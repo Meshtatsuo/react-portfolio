@@ -39,10 +39,18 @@ function App() {
   // Portfolio Pieces
   const [portfolio_items] = useState([
     {
+      title: "National Park Catalog",
+      description: "A web application for sharing photos with clients.",
+      tech: "React | Express | Axios",
+      link: "https://github.com/Meshtatsuo/national-park-catalog",
+      img: `${require("./assets/portfolio-items/national-park.png")}`,
+      alt: "national park catalog thumbnail",
+    },
+    {
       title: "Photo Reviewer",
       description: "A web application for sharing photos with clients.",
       tech: "NodeJS | ExpressJS | Sequelize | AWS",
-      link: "https://fomo-photo-reviewer.herokuapp.com/",
+      link: "https://github.com/Meshtatsuo/photo-reviewer",
       img: `${require("./assets/portfolio-items/PI_PhotoReviewer.png")}`,
       alt: "photo reviewer thumbnail",
     },
@@ -61,15 +69,6 @@ function App() {
       link: "https://github.com/Meshtatsuo/llamaPlayer",
       img: `${require("./assets/portfolio-items/llama-player.png")}`,
       alt: "Llama Player thumbnail",
-    },
-    {
-      title: "The Medician Blog",
-      description:
-        "A fictional blog site built around a post noir audio drama world.",
-      tech: "NodeJS | MySQL | ExpressJS",
-      link: "https://medician-blog.herokuapp.com/",
-      img: `${require("./assets/portfolio-items/medician-blog.png")}`,
-      alt: "Medician Blog Thumbnail",
     },
   ]);
 
