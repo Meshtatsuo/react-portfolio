@@ -12,18 +12,20 @@ function Nav(props) {
   return (
     <header>
       <div id="logo">
-        <button>
-          <span
-            onClick={() => {
-              setCurrentPage("HOME");
-            }}
-          >
-            <img
-              src={require("../../assets/AudioBullWordmark.png")}
-              alt="audiobull logo"
-            />
-          </span>
-        </button>
+        <Link to="/">
+          <button>
+            <span
+              onClick={() => {
+                setCurrentPage("HOME");
+              }}
+            >
+              <img
+                src={require("../../assets/AudioBullWordmark.png")}
+                alt="audiobull logo"
+              />
+            </span>
+          </button>
+        </Link>
       </div>
 
       <nav>
