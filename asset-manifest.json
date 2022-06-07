@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fda0a1a.css",
-    "main.js": "/static/js/main.2720d33c.js",
+    "main.js": "/static/js/main.ecabfaf4.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/national-park.png": "/static/media/national-park.78a726410dcb9cf9fa3b.png",
     "static/media/mental-health-check.png": "/static/media/mental-health-check.f169e8cfca1382da5903.png",
@@ -17,11 +17,11 @@
     "static/media/linkedin.png": "/static/media/linkedin.f8d0b81d5496916293a8.png",
     "index.html": "/index.html",
     "main.2fda0a1a.css.map": "/static/css/main.2fda0a1a.css.map",
-    "main.2720d33c.js.map": "/static/js/main.2720d33c.js.map",
+    "main.ecabfaf4.js.map": "/static/js/main.ecabfaf4.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fda0a1a.css",
-    "static/js/main.2720d33c.js"
+    "static/js/main.ecabfaf4.js"
   ]
 }
