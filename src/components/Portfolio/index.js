@@ -11,9 +11,7 @@ function Portfolio(props) {
       <Project
         portfolio_items={portfolio_items}
         showcase_items={showcase_items}
-      >
-      </Project>
-      
+      ></Project>
     </section>
   );
 }

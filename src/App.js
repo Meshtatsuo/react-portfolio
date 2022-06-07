@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// pages
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+// css files
 import "./App.css";
+import ContactComplete from "./components/Contact-Complete";
 
 function App() {
   // Nav props
@@ -74,42 +79,43 @@ function App() {
 
   return (
     <div>
-      <Header
-        pages={pages}
-        setCurrentPage={setCurrentPage}
-        currentPage={currentPage}
-      ></Header>
-      <main>
-        {currentPage === pages[0] && (
-          <>
-            <Hero></Hero>
-            <Portfolio
-              portfolio_items={portfolio_items}
-              showcase_items={showcase_items}
-            ></Portfolio>
-            <About />
-          </>
-        )}
-        {currentPage === "HOME" && (
-          <>
-            <Hero></Hero>
-            <Portfolio
-              portfolio_items={portfolio_items}
-              showcase_items={showcase_items}
-            ></Portfolio>
-            <About />
-          </>
-        )}
-        {currentPage === "ABOUT" && <About />}
-        {currentPage === "PORTFOLIO" && (
-          <Portfolio
-            portfolio_items={portfolio_items}
-            showcase_items={showcase_items}
-          ></Portfolio>
-        )}
-        {currentPage === "CONTACT" && <Contact />}
-      </main>
-      <Footer />
+      <Router>
+        <Header
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}
+        ></Header>
+        <Hero />
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Portfolio
+                    portfolio_items={portfolio_items}
+                    showcase_items={showcase_items}
+                  ></Portfolio>
+                  <About />
+                </>
+              }
+            />
+            <Route path="/about" element={<About />} />
+            <Route
+              path="/portfolio"
+              element={
+                <Portfolio
+                  portfolio_items={portfolio_items}
+                  showcase_items={showcase_items}
+                ></Portfolio>
+              }
+            />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact-sent" element={<ContactComplete />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
     </div>
   );
 }

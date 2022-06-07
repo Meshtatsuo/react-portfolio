@@ -1,16 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import ReCaptchaV2 from "react-google-recaptcha";
+import { send } from "emailjs-com";
 
 import { validateEmail } from "../../utils/helpers";
 
 function Contact() {
+  const navigate = useNavigate();
   // form state management
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     message: "",
+    token: null,
   });
   // error message management
   const [errorMessage, setErrorMessage] = useState("");
+
+  const { name, email, message } = formState;
+
+  const handleToken = (token) => {
+    console.log("Token validated");
+    setFormState({ ...formState, token });
+  };
+
+  const handleExpire = (token) => {
+    setFormState({ ...formState, token: null });
+  };
 
   function handleFormChange(e) {
     if (e.target.name === "email") {
@@ -28,16 +44,23 @@ function Contact() {
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
     }
-    console.log(formState);
   }
 
   function handleFormSubmit(e) {
     e.preventDefault();
     // would normally send the email in this bit, console logging for now.
-    console.log(formState);
+    if (formState.token) {
+      send(
+        process.env.REACT_APP_EMAILJS_SERVICEID,
+        process.env.REACT_APP_EMAILJS_TEMPLATEID,
+        formState,
+        process.env.REACT_APP_EMAILJS_USERID
+      );
+      navigate("/contact-sent");
+    } else {
+      setErrorMessage("Must validate reCAPTCHA!");
+    }
   }
-
-  const { name, email, message } = formState;
 
   return (
     <section>
@@ -59,6 +82,15 @@ function Contact() {
         </div>
         <div id="contact-form">
           <form id="contact-form" onSubmit={handleFormSubmit}>
+            {errorMessage ? (
+              <div>
+                <p id="contact-error-text">{errorMessage}</p>
+              </div>
+            ) : (
+              <div>
+                <p id="contact-error-text">&nbsp;</p>
+              </div>
+            )}
             <div>
               <label htmlFor="name">Name:</label>
               <input
@@ -86,16 +118,12 @@ function Contact() {
                 rows="5"
               />
             </div>
+            <ReCaptchaV2
+              sitekey={process.env.REACT_APP_SITE_KEY}
+              onChange={handleToken}
+              onExpired={handleExpire}
+            />
             <button type="submit">Submit</button>
-            {errorMessage ? (
-              <div>
-                <p id="contact-error-text">{errorMessage}</p>
-              </div>
-            ) : (
-              <div>
-                <p id="contact-error-text">&nbsp;</p>
-              </div>
-            )}
           </form>
         </div>
         <div id="contact-socials" className="social-icons">

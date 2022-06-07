@@ -1,7 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav(props) {
   const { pages, setCurrentPage, currentPage } = props;
+
+  function getRouterLink(pageName) {
+    let link = pageName.toLowerCase();
+    return link;
+  }
 
   return (
     <header>
@@ -24,22 +30,24 @@ function Nav(props) {
         <ul>
           {pages.map((page) => {
             return (
-              <button
-                onClick={() => {
-                  setCurrentPage(page.name);
-                }}
-                key={page.name}
-              >
-                <li
-                  className={`${
-                    currentPage.name === page.name &&
-                    !currentPage &&
-                    `navActive`
-                  }`}
+              <Link to={getRouterLink(page.name)} key={page.name}>
+                <button
+                  onClick={() => {
+                    setCurrentPage(page.name);
+                  }}
+                  key={page.name}
                 >
-                  {page.name}
-                </li>
-              </button>
+                  <li
+                    className={`${
+                      currentPage.name === page.name &&
+                      !currentPage &&
+                      `navActive`
+                    }`}
+                  >
+                    {page.name}
+                  </li>
+                </button>
+              </Link>
             );
           })}
         </ul>
